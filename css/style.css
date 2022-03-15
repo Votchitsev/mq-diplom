@@ -1,0 +1,70 @@
+body {
+    width: 1660px;
+    margin: 0 auto;
+    font-family: 'Open Sans';
+}
+
+header {
+    width: 100%;
+    height: 449px;
+    position: relative;
+    background-image: url("../images/banner-bg.jpg");
+}
+
+header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color:#000000;
+    opacity: 0.6;
+}
+
+.header__menu {
+    display: flex;
+    position: absolute;
+    justify-content: space-between;
+    right: 245px;
+    width: 462px;
+    margin-top: 45px;
+    font-size: 13px;
+}
+
+.header__menu__item {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #f6f7f7;
+}
+
+.header__menu__item:hover {
+    text-decoration: 2px underline #606963;
+}
+
+.header__logo {
+    position: absolute;
+    width: 179px;
+    height: 41px;
+    top: 28px;
+    left: 248px;
+}
+
+h1 {
+    font-size: 45px;
+    text-transform: uppercase;
+    color: #ffffff; 
+    position: absolute;
+    top: 195px;
+    left: 491px;
+    right: 490px;
+    text-align: center;
+    margin: 0;
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url('../fonts/OpenSans-Regular.ttf'),
+    url('../fonts/OpenSans-Regular.woff'),
+    url('../fonts/OpenSans-Regular.woff2');
+}
