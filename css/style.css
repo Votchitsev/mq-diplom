@@ -8,7 +8,7 @@ header {
     width: 100%;
     height: 449px;
     position: relative;
-    background-image: url("../images/banner-bg.jpg");
+    background-image: url("../images/banner-bg.jpg");;
 }
 
 header::before {
@@ -62,9 +62,129 @@ h1 {
     margin: 0;
 }
 
+.trends {
+    height: 380px;
+    width: 100%;
+}
+
+h2 {
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+.trends {
+    margin-top: 59px;
+}
+
+.trends-title {
+    text-align: center;
+    margin-bottom: 14px;
+}
+
+.trends-title-underline {
+    display: block;
+    height: 3px;
+    width: 65px;
+    margin: 0 auto;
+    background-color: #e1d9bd;
+}
+
+.trends-container {
+    position: relative;
+    margin-top: 28px;
+    width: 100%;
+    height: 320px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.trends-container-item {
+    position: relative;
+    height: 100%;
+    width: 410px;
+    border: 1px solid #888b79
+}
+
+.trend-img-one {
+    background-image: url('../images/trend1.jpg');
+    background-size: cover;
+}
+
+.trend-img-two {
+    background-image: url('../images/trend2.jpg');
+    background-size: cover;
+}
+
+.trend-img-three {
+    background-image: url('../images/trend3.jpg');
+    background-size: cover;
+}
+
+.trend-img-four {
+    background-image: url('../images/trend4.jpg');
+    background-size: cover;
+}
+
+.trends-container-item::before {
+    background-color: #000000;
+    opacity: 0.6;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    content: "";
+}
+
+.trends-container-item-content {
+    position: absolute;
+    display: block;
+    border: 3px solid #78673c;
+    bottom: 15px;
+    left: 20px;
+    right: 22px;
+    padding: 40px 0px 37px 33px;
+}
+
+.trends-container-item-content__category-item {
+    display: inline-block;
+    color:  #b59f5b;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-right: 20px;
+    text-decoration: none;
+}
+
+.trends-container-item-content__category-item:hover {
+    text-decoration: 2px underline #7a7331;
+}
+
+.trends-container-item-content__title {
+    display: block;
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-top: 15px;
+    text-decoration: none;
+}
+
+.trends-container-item-content__title:hover {
+    color: #b59f5b;
+}
+
 @font-face {
     font-family: 'Open Sans';
     src: url('../fonts/OpenSans-Regular.ttf'),
     url('../fonts/OpenSans-Regular.woff'),
     url('../fonts/OpenSans-Regular.woff2');
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url('../fonts/OpenSans-Bold.ttf'),
+    url('../fonts/OpenSans-Bold.woff'),
+    url('../fonts/OpenSans-Bold.woff2');
+    font-weight: bold;
 }
