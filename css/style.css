@@ -4,6 +4,11 @@ body {
     font-family: 'Open Sans';
 }
 
+p {
+    margin-bottom: 11px;
+    margin-top: 0;
+}
+
 header {
     width: 100%;
     height: 449px;
@@ -172,6 +177,107 @@ h2 {
 
 .trends-container-item-content__title:hover {
     color: #b59f5b;
+}
+
+.posts {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1170px;
+    
+}
+
+.posts-column {
+    display: flex;
+    flex-direction: column;
+    width: 900px;
+}
+
+.posts-sidebar {
+    display: flex;
+    flex-direction: column;
+    width: 140px;
+}
+
+.posts-column-post {
+    display: flex;
+    padding-right: 125px;
+    margin-top: 64px;
+}
+
+.posts-column-post__picture {
+    width: 380px;
+    height: 294px;
+}
+
+.posts-column-post__content {
+    margin-left: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.posts-column-post__content__frame {
+    display: flex;
+    flex-direction: column;
+    padding-top: 2px;
+}
+
+.posts-column-post__content__frame__category {
+    display: flex;
+    line-height: 10px;    
+}
+
+.posts-column-post__content__frame__category-name {
+    color: #b59f5b;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-right: 20px;
+    text-decoration: none;
+}
+
+
+.posts-column-post__content__frame__category-name:hover {
+    text-decoration: 2px underline #7a7331;    
+}
+
+
+.posts-column-post__content__frame__title {
+    margin-top: 15px;
+    font-size: 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color:#000000;
+    font-weight: bold;
+    line-height: 24px;
+}
+
+.posts-column-post__content__frame__title:hover {
+    color: #b59f5b;
+}
+
+.posts-column-post__content__frame__date-author {
+    margin-top: 36px;
+    display: flex;
+    line-height: 10px;
+}
+
+.posts-column-post__content__frame__date-author__date {
+    margin-right: 15px;
+    font-size: 12px;
+    color: #999999;
+}
+
+.posts-column-post__content__frame__date-author__author {
+    margin-right: 15px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.posts-column-post__content__text {
+    font-size: 15px;
+    margin-top: 55px;
+    line-height: 22px;
 }
 
 @font-face {
