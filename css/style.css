@@ -356,6 +356,114 @@ h3 {
     padding-left: 17px;
 }
 
+.posts-sidebar-subscribe {
+    margin-top: 61px;
+}
+
+.posts-sidebar-subscribe-form {
+    margin-top: 23px;
+}
+
+#subscribe-field {
+    width: 100%;
+    height: 48px;
+    box-sizing: border-box;
+    background-color: #f4f7f6;
+    border: none;
+    padding-left: 18px;
+}
+
+#subscribe-field:focus {
+    border: 1px solid #b59f5b;
+    border-bottom: 1px solid #cec299;
+    outline: none;
+    padding-left: 17px;
+}
+
+#subscribe-submit {
+    margin-top: 17px;
+    width: 100%;
+    height: 49px;
+    background-color: #b59f5b;
+    border: none;
+    border-top: 1px solid #e1d9bd;
+    color:white;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.posts-sidebar-tags {
+    margin-top: 61px;
+}
+
+.posts-sidebar-tags-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 24px;
+}
+
+.posts-sidebar-tags-container__tag {
+    line-height: 9px;
+    text-transform: uppercase;
+    padding: 8px 14px;
+    border: 3px solid #ededed;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: bold;
+    margin-left: 5px;
+    margin-top: 6px;
+    color: #000000;
+}
+
+.posts-sidebar-tags-container__tag:nth-child(3n) {
+    margin-left: none;
+}
+
+.posts-sidebar-tags-container__tag:hover {
+    border-color: #b59f5b;
+}
+
+.posts-sidebar-categories {
+    margin-top: 61px;
+    width: 100%;
+}
+
+.posts-sidebar-categories-container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 8px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.posts-sidebar-categories-container__item {
+    width: 100%;
+    height: 48px;
+    border-bottom: 1px solid #eeeeee;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-weight: bold;
+    font-size: 14px;
+    padding-top: 12px;
+    box-sizing: border-box;
+    line-height: 13px;
+    color: #000;
+  }
+
+.posts-sidebar-categories-container__item:hover {
+    color: #b59f5b;
+}  
+
+#count {
+    font-size: 12px;
+    margin-left: 5px;
+    font-weight: bold;
+    color:#b59f5b;
+    vertical-align: super;
+}
+
 @font-face {
     font-family: 'Open Sans';
     src: url('../fonts/OpenSans-Regular.ttf'),
