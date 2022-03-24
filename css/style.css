@@ -464,6 +464,112 @@ h3 {
     vertical-align: super;
 }
 
+.shop {
+    margin-top: 65px;
+}
+
+.shop-title {
+    text-align: center;
+}
+
+.shop-container {
+    width: 1170px;
+    margin: 28px auto;
+    height: 440px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+
+.shop-item {
+    position: relative;
+    width: 347px;
+}
+
+.shop-item:nth-child(2+n) {
+    margin-left: 66px;
+}
+
+.shop-item__img {
+    padding-left: 23px;
+    padding-right: 23px;
+}
+
+.shop-item__content {
+    position: absolute;
+    bottom: 0px;
+    border: 3px solid #d3c59d;
+    width: 100%;
+    height: 267px;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 54px 19px 0px;
+}
+
+.shop-item__content__title {
+    margin-bottom: 0px;
+    margin-top: 0px;
+    font-size: 20px;
+}
+
+.shop-item__content__description {
+    margin-top: 1px;
+    margin-bottom: 0;
+    font-size: 15px;
+}
+
+.text-link {
+    text-decoration: none;
+    color: #b59f5b;
+}
+
+.shop-item__content__price-submit {
+    margin-top: 24px;
+    display: flex;
+    position: relative;
+    font-size: 14px;
+}
+
+.price {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    height: 49px;
+    font-weight: bold;
+    line-height: 20px;
+    padding-bottom: 9px;
+}
+
+.previous-price {
+    text-decoration: line-through;
+}
+
+.actual-price {
+    font-size: 20px;
+    margin-bottom: 9px;
+}
+
+.shop-item__content__price-submit__submit {
+    width: 140px;
+    height: 49px;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    background-color: #b59f5b;
+    color: #ffffff;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.shop-item__content__price-submit__submit:hover {
+    background-color: #323232;
+}
+
 @font-face {
     font-family: 'Open Sans';
     src: url('../fonts/OpenSans-Regular.ttf'),
