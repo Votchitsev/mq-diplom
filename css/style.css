@@ -593,8 +593,8 @@ footer {
     text-align: center;
     font-size: 12px;
     color:#999999;
-    margin-top: 74px;
-    margin-bottom: 38px;
+    padding-top: 74px;
+    padding-bottom: 38px;
 }
 
 @font-face {
