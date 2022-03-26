@@ -47,6 +47,10 @@ header::before {
     text-decoration: 2px underline #606963;
 }
 
+.header-btn-close {
+    visibility: hidden;
+}
+
 .header__logo {
     position: absolute;
     width: 179px;
@@ -595,6 +599,118 @@ footer {
     color:#999999;
     padding-top: 74px;
     padding-bottom: 38px;
+}
+
+@media (max-width: 1199px) {
+    
+    body {
+        width: 768px;
+        margin: 0 auto;
+        font-family: 'Open Sans';
+    }
+    
+    .header__menu {
+        visibility: hidden;
+        position: absolute;
+        right: 35px;
+    }
+
+    .header-btn-close {
+        visibility: visible;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 23px;
+    }
+
+    .header-btn-close-shape {
+        background-color: #ffffff;
+        height: 2px;
+        width: 100%;
+    }
+    .header__logo {
+        left: 35px;
+    }
+    .header__intro {
+        left: 81px;
+        right: 81px;
+        font-size: 39px;
+    }
+    .trends {
+        margin-top: 50px;
+        height: 545px;
+    }
+    .trends-container {
+        flex-wrap: wrap;
+        justify-content: space-between;
+        height: 497px;
+    }
+    .trends-container-item {
+        width: 49.5%;
+        height: 49%;
+    }
+
+    .posts {
+        width: 700px;
+    }
+
+    .posts-column {
+        width: 427px;
+    }
+
+    .posts-column-post {
+        flex-direction: column;
+        margin-top: 41px;
+        padding-right: none;
+    }
+
+    .posts-column-post:last-child > .posts-column-post__content {
+        border-bottom: none;
+    }
+
+    .posts-column-post__content {
+        margin-left: 0;
+        width: 380px;
+        border-bottom: 2px solid #eeeeee;
+        padding-bottom: 23px;
+    }
+
+    .posts-column-post__content__frame {
+        margin-top: 17px;
+    }
+
+    .posts-column-post__content__text {
+        margin-top: 37px;
+    }
+
+    .shop {
+        margin-top: 50px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 700px;
+    }
+    .shop-container {
+        width:100%;
+        flex-wrap: wrap;
+        height:920px;
+    }
+    .shop-item {
+        height: 435px;
+    }     
+    
+    footer {
+        width: 100%;
+        margin: 50px auto;  
+    }
+
+    .socials {
+        margin: 0 243px;
+    }
+
+    .copyright {
+        padding-top: 50px;
+        padding-bottom: 40px;
+    }
 }
 
 @font-face {
