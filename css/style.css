@@ -601,6 +601,115 @@ footer {
     padding-bottom: 38px;
 }
 
+.popup {
+    background-color: rgba(33, 34, 35, 0.6);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 0;
+    visibility: hidden;
+}
+
+.popup-form {
+    position: fixed;
+    width: 390px;
+    height: 590px;
+    z-index: 1;
+    background-color: rgba(255, 255, 255, 1);
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 238px;
+    padding: 53px 30px;
+    box-sizing: border-box;
+}
+
+.popup-form__title {
+    text-align: center;
+    margin-top: 0;
+    line-height: 1em;
+}
+
+.popup-form__question {
+    margin-top: 32px;
+    font-size: 13px;
+    line-height: 1.2em;
+}
+
+.popup-form__open-page-question {
+    height: 48px;
+    width: 330px;
+    border: none;
+    border-bottom: 1px solid #e9e5d4;
+    background-color: #f4f7f6;
+    padding-left: 19px;
+    background-image: url(../svg/form-arrows.svg);
+    background-repeat: no-repeat;
+    background-size: 8px;
+    background-position-x: 308px;
+    background-position-y: center;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+}
+
+.popup-form__radio-form {
+    display: flex;
+    align-items: center;
+}
+
+.popup-form__radio-button {
+    margin-right: 4px;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    background-image: url(../svg/form-empty-circle.svg);  
+    background-size: 18px;
+    height: 18px;
+    width: 18px;
+}
+
+.popup-form__radio-button:checked {
+    background-image: url(../svg/form-circle.svg);
+}
+
+.popup-form__radio-button-value {
+    margin-right: 17px;
+    margin-left: 4px;
+    font-size: 13px;
+}
+
+.popup-form__desired-content {
+    height: 131px;
+    width: 330px;
+    background-color: #f4f7f6;
+    border: none;
+    padding: 21px;
+    box-sizing: border-box;
+    resize: none;
+}
+
+.popup-form__submit {
+    width:330px;
+    height: 40px;
+    background-color: #b59f5b;
+    border: none;
+    font-size: 14px;
+    text-transform: uppercase;
+    color:#ffffff;
+    font-weight: bold;
+    margin-top: 26px;
+    padding-top: 1px solid #e1d9bd;
+    cursor: pointer;
+}
+
+.popup-close {
+    position: absolute;
+    width: 19px;
+    right: 0;
+    top: -27px;
+}
+
 @media (max-width: 1199px) {
     
     body {
@@ -710,6 +819,20 @@ footer {
     .copyright {
         padding-top: 50px;
         padding-bottom: 40px;
+    }
+    .popup-close {
+        position: absolute;
+        width: 27px;
+        right: 0;
+        top: -36px;
+    }
+    .popup-form__radio-button {
+        width:25px;
+        height: 25px;
+        background-size: 25px;
+    }
+    .popup-form__radio-button-value {
+        margin-left: 6px;
     }
 }
 
