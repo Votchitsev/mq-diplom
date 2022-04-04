@@ -1,7 +1,24 @@
 body {
-    width: 1660px;
-    margin: 0 auto;
     font-family: 'Open Sans';
+    margin: 0;
+}
+
+.wrapper {
+    width: 1660px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.header-content {
+    width:1200px;
+    height: 40px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    padding-top: 28px;
+    padding-bottom: 0;
 }
 
 p {
@@ -13,7 +30,9 @@ header {
     width: 100%;
     height: 449px;
     position: relative;
-    background-image: url("../images/banner-bg.jpg");;
+    background-image: url("../images/banner-bg.jpg");
+    display: flex;
+    flex-direction: column;
 }
 
 header::before {
@@ -29,18 +48,21 @@ header::before {
 
 .header__menu {
     display: flex;
-    position: absolute;
     justify-content: space-between;
-    right: 245px;
-    width: 462px;
-    margin-top: 45px;
     font-size: 13px;
+    width: 462px;
+    align-items: center;
+}
+
+.header__menu__item:nth-child(6) {
+    margin-right: 0;
 }
 
 .header__menu__item {
     text-transform: uppercase;
     text-decoration: none;
     color: #f6f7f7;
+    z-index: 1;
 }
 
 .header__menu__item:hover {
@@ -52,23 +74,28 @@ header::before {
 }
 
 .header__logo {
-    position: absolute;
-    width: 179px;
-    height: 41px;
-    top: 28px;
-    left: 248px;
+    z-index: 1;
+    width: 180px;
+}
+
+.header__intro {
+    height: 346px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 h1 {
     font-size: 45px;
     text-transform: uppercase;
     color: #ffffff; 
-    position: absolute;
-    top: 195px;
-    left: 491px;
-    right: 490px;
+    box-sizing: border-box;
     text-align: center;
     margin: 0;
+    z-index: 1;
+    width: 680px;
+    line-height: 75px;
 }
 
 .trends {
@@ -713,9 +740,12 @@ footer {
 @media (max-width: 1199px) {
     
     body {
-        width: 768px;
         margin: 0 auto;
         font-family: 'Open Sans';
+    }
+
+    .wrapper {
+        width: 768px;
     }
     
     .header__menu {
@@ -730,6 +760,7 @@ footer {
         flex-direction: column;
         justify-content: space-between;
         width: 23px;
+        height: 20px;
     }
 
     .header-btn-close-shape {
