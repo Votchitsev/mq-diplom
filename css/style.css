@@ -495,7 +495,7 @@ h3 {
     color: #b59f5b;
 }  
 
-#count {
+.count {
     font-size: 12px;
     margin-left: 5px;
     font-weight: bold;
