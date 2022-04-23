@@ -3,14 +3,8 @@ body {
     margin: 0;
 }
 
-.wrapper {
-    width: 1660px;
-    max-width: 100%;
-    margin: 0 auto;
-}
-
 .header-content {
-    width:1200px;
+    width:1170px;
     height: 40px;
     margin: 0 auto;
     display: flex;
@@ -26,11 +20,28 @@ p {
     margin-top: 0;
 }
 
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+    z-index: 1;
+    padding: 0;
+    margin: 0;
+}
+
+.header__menu__item > a {
+    text-decoration: none;
+    color: #f6f7f7;
+}
+
 header {
     width: 100%;
-    height: 449px;
     position: relative;
     background-image: url("../images/banner-bg.jpg");
+    background-size: cover;
     display: flex;
     flex-direction: column;
 }
@@ -48,21 +59,15 @@ header::before {
 
 .header__menu {
     display: flex;
-    justify-content: space-between;
+    justify-content: end;
     font-size: 13px;
-    width: 462px;
     align-items: center;
-}
-
-.header__menu__item:nth-child(6) {
-    margin-right: 0;
 }
 
 .header__menu__item {
     text-transform: uppercase;
     text-decoration: none;
-    color: #f6f7f7;
-    z-index: 1;
+    margin-left: 35px;
 }
 
 .header__menu__item:hover {
@@ -79,11 +84,12 @@ header::before {
 }
 
 .header__intro {
-    height: 346px;
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-top: 110px;
+    padding-bottom: 130px;
 }
 
 h1 {
@@ -94,7 +100,7 @@ h1 {
     text-align: center;
     margin: 0;
     z-index: 1;
-    width: 680px;
+    width: 690px;
     line-height: 75px;
 }
 
@@ -136,18 +142,19 @@ h3 {
 
 .trends-container {
     position: relative;
-    margin-top: 28px;
+    margin: 28px -4px;
     width: 100%;
     height: 320px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 .trends-container-item {
     position: relative;
     height: 100%;
     width: 410px;
-    border: 1px solid #888b79
+    border: 1px solid #888b79;
+    margin: 0 4px;
 }
 
 .trend-img-one {
@@ -337,11 +344,12 @@ h3 {
 }
 
 .posts-sidebar-new-posts__post-frame__title {
-    margin-top: 11px;
+    margin-top: 6px;
     line-height: 18px;
     font-size: 14px;
     font-weight: bold;
     text-transform: uppercase;
+    text-align: start;
 }
 
 .posts-sidebar-new-posts__post-img {
@@ -497,6 +505,7 @@ h3 {
 
 .shop {
     margin-top: 65px;
+    position: relative;
 }
 
 .shop-title {
@@ -505,15 +514,13 @@ h3 {
 
 .shop-container {
     width: 1170px;
-    margin: 28px auto;
-    height: 440px;
+    margin: 200px auto 65px;
     position: relative;
     display: flex;
     justify-content: space-between;
 }
 
 .shop-item {
-    position: relative;
     width: 347px;
 }
 
@@ -524,18 +531,19 @@ h3 {
 .shop-item__img {
     padding-left: 23px;
     padding-right: 23px;
+    position: absolute;
+    top: -172px;
+    z-index: -1;
 }
 
 .shop-item__content {
-    position: absolute;
     bottom: 0px;
     border: 3px solid #d3c59d;
-    width: 100%;
-    height: 267px;
+    height: 100%;
     display: flex;
     flex-direction: column;
-    box-sizing: border-box;
     padding: 54px 19px 0px;
+    box-sizing: border-box;
 }
 
 .shop-item__content__title {
