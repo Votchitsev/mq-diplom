@@ -1,7 +1,9 @@
 body {
     font-family: 'Open Sans';
     margin: 0;
-}
+    display: flex;
+    flex-direction: column;
+  }
 
 .header-content {
     width:1170px;
@@ -125,6 +127,7 @@ h3 {
 
 .trends {
     margin-top: 59px;
+    height: fit-content;
 }
 
 .trends-title {
@@ -155,26 +158,34 @@ h3 {
     width: 410px;
     border: 1px solid #888b79;
     margin: 0 4px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 0 22px 15px 19px;
 }
 
 .trend-img-one {
     background-image: url('../images/trend1.jpg');
     background-size: cover;
+    z-index: -2;
 }
 
 .trend-img-two {
     background-image: url('../images/trend2.jpg');
     background-size: cover;
+    z-index: -2;
 }
 
 .trend-img-three {
     background-image: url('../images/trend3.jpg');
     background-size: cover;
+    z-index: -2;
 }
 
 .trend-img-four {
     background-image: url('../images/trend4.jpg');
     background-size: cover;
+    z-index: -2;
 }
 
 .trends-container-item::before {
@@ -186,16 +197,14 @@ h3 {
     right: 0;
     bottom: 0;
     content: "";
+    z-index: -1;
 }
 
 .trends-container-item-content {
-    position: absolute;
-    display: block;
     border: 3px solid #78673c;
-    bottom: 15px;
-    left: 20px;
-    right: 22px;
     padding: 40px 0px 37px 33px;
+    margin-top: auto;
+    width: initial;
 }
 
 .trends-container-item-content__category-item {
@@ -514,7 +523,9 @@ h3 {
 
 .shop-container {
     width: 1170px;
-    margin: 200px auto 65px;
+    margin-top: 243px;
+    margin-left: auto;
+    margin-right: auto;
     position: relative;
     display: flex;
     justify-content: space-between;
@@ -643,7 +654,7 @@ footer {
     bottom: 0;
     left: 0;
     right: 0;
-    z-index: 0;
+    z-index: 1;
     visibility: hidden;
 }
 
@@ -656,7 +667,8 @@ footer {
     margin: auto;
     left: 0;
     right: 0;
-    top: 238px;
+    top: 15vh;
+    bottom: auto;
     padding: 53px 30px;
     box-sizing: border-box;
 }
@@ -745,21 +757,29 @@ footer {
     top: -27px;
 }
 
-@media (max-width: 1199px) {
+#1 {
+    height: fit-content;
+}
+
+@media (min-width: 641px) and (max-width: 1199px) {
     
     body {
         margin: 0 auto;
         font-family: 'Open Sans';
     }
 
-    .wrapper {
-        width: 768px;
+    h1 {
+        font-size: 40px;
     }
     
     .header__menu {
         visibility: hidden;
         position: absolute;
         right: 35px;
+    }
+
+    .header-conrent {
+        width: 91%;
     }
 
     .header-btn-close {
@@ -780,36 +800,60 @@ footer {
         left: 35px;
     }
     .header__intro {
-        left: 81px;
-        right: 81px;
-        font-size: 39px;
+        width: 78%;
+        align-self: center;
     }
     .trends {
         margin-top: 50px;
-        height: 545px;
+        height: fit-content;
     }
+
+    .trends-title {
+        margin-top: 0;
+    }
+
     .trends-container {
         flex-wrap: wrap;
-        justify-content: space-between;
+        justify-content: center;
         height: 497px;
     }
+
     .trends-container-item {
-        width: 49.5%;
+        width: 48%;
         height: 49%;
+        padding: 0 2% 2% 2%;
+        box-sizing: border-box;
+    }
+
+    .trends-container-item-content__title {
+        font-size: 17px;
+    }
+
+    .trends-container-item-content {
+        padding: 35px;
     }
 
     .posts {
-        width: 700px;
+        width: 91%;
+    }
+
+    .posts-sidebar {
+        width: 39%;
     }
 
     .posts-column {
-        width: 427px;
+        width: 60%;
     }
 
     .posts-column-post {
         flex-direction: column;
         margin-top: 41px;
-        padding-right: none;
+        padding-right: 35px;
+    }
+
+    .posts-column-post__picture {
+        width: 100%;
+        height: 100%;
     }
 
     .posts-column-post:last-child > .posts-column-post__content {
@@ -818,7 +862,7 @@ footer {
 
     .posts-column-post__content {
         margin-left: 0;
-        width: 380px;
+        width: 100%;
         border-bottom: 2px solid #eeeeee;
         padding-bottom: 23px;
     }
@@ -831,34 +875,48 @@ footer {
         margin-top: 37px;
     }
 
+    .posts-sidebar {
+        width: 39%;
+    }
+
+    #search-field {
+        width: 100%;
+    }
+
     .shop {
         margin-top: 50px;
         margin-left: auto;
         margin-right: auto;
-        width: 700px;
+        width: 91%;
     }
     .shop-container {
         width:100%;
         flex-wrap: wrap;
-        height:920px;
+        margin-top: 0;
     }
     .shop-item {
-        height: 435px;
-    }     
-    
+        position: relative;
+        margin-top: 215px;
+    }
+
     footer {
-        width: 100%;
+        width: 91%;
         margin: 50px auto;  
     }
 
     .socials {
-        margin: 0 243px;
+        margin: 0 35%;
     }
 
     .copyright {
         padding-top: 50px;
         padding-bottom: 40px;
     }
+
+    .popup-form {
+        top: 7vh;
+    }
+
     .popup-close {
         position: absolute;
         width: 27px;
@@ -872,6 +930,101 @@ footer {
     }
     .popup-form__radio-button-value {
         margin-left: 6px;
+    }
+}
+
+@media (max-width: 640px) {
+
+    .trends-container {
+        width: 100%;
+        height: fit-content;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .trends-container-item {
+        width: 100%;
+        height: 250px;
+    } 
+
+    .posts {
+        width: 91%;
+    }
+
+    .posts-column {
+        width: 60%;
+    }
+
+    .posts-column-post {
+        flex-direction: column;
+        margin-top: 41px;
+        padding-right: 35px;
+    }
+
+    .posts-column-post__picture {
+        width: 100%;
+        height: 100%;
+    }
+
+    .posts-column-post:last-child > .posts-column-post__content {
+        border-bottom: none;
+    }
+
+    .posts-column-post__content {
+        margin-left: 0;
+        width: 100%;
+        border-bottom: 2px solid #eeeeee;
+        padding-bottom: 23px;
+    }
+
+    .posts-sidebar {
+        width: 39%;
+    }
+
+    #search-field {
+        width: 100%;
+    }
+
+    .shop {
+        margin-top: 50px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 91%;
+    }
+    .shop-container {
+        width:100%;
+        flex-wrap: wrap;
+        margin-top: 0;
+    }
+    .shop-item {
+        position: relative;
+        margin-top: 215px;
+    }
+
+    footer {
+        width: 100%;
+        margin: 50px auto;  
+    }
+
+    .socials {
+        margin: 0 35%;
+    }
+
+    .popup-form {
+        top: 7vh;
+    }
+}
+
+@media (min-width: 641px) and (max-width: 1199px) and
+(orientation: landscape) {
+    .trends-container-item {
+        width: 24%;
+        padding: 0 2% 2% 2%;
+        height: 100%;
+    }
+
+    .trends-container {
+        height: 320px;
     }
 }
 
