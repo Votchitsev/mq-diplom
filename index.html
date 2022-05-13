@@ -83,8 +83,8 @@
                 <div class="posts-column-post__content">
                     <div class="posts-column-post__content__frame">
                         <ul class="posts-column-post__content__frame__category">
-                            <li><a class="posts-column-post__content__frame__category-name" href="#">travel</a></li>
-                            <li><a class="posts-column-post__content__frame__category-name" href="#">health</a></li>
+                            <li class="posts-column-post__content__frame__category__item"><a class="posts-column-post__content__frame__category-name" href="#">travel</a></li>
+                            <li class="posts-column-post__content__frame__category__item"><a class="posts-column-post__content__frame__category-name" href="#">health</a></li>
                         </ul>
                         <h2 class="posts-column-post__content__frame__title"><a  href="#">10 мест, ради которых стоит проснуться на рассвете</a></h2>
                         <div class="posts-column-post__content__frame__date-author">
@@ -100,8 +100,8 @@
                 <div class="posts-column-post__content">
                     <div class="posts-column-post__content__frame">
                         <ul class="posts-column-post__content__frame__category">
-                            <li><a class="posts-column-post__content__frame__category-name" href="#">health</a></li>
-                            <li><a class="posts-column-post__content__frame__category-name" href="#">lifestyle</a></li>
+                            <li class="posts-column-post__content__frame__category__item"><a class="posts-column-post__content__frame__category-name" href="#">health</a></li>
+                            <li class="posts-column-post__content__frame__category__item"><a class="posts-column-post__content__frame__category-name" href="#">lifestyle</a></li>
                         </ul>
                         <h2 class="posts-column-post__content__frame__title"><a href="#">йога для начинающих в домашних условиях</a></h2>
                         <div class="posts-column-post__content__frame__date-author">
@@ -117,7 +117,7 @@
                 <div class="posts-column-post__content">
                     <div class="posts-column-post__content__frame">
                         <ul class="posts-column-post__content__frame__category">
-                            <li><a class="posts-column-post__content__frame__category-name" href="#">music</a></li>
+                            <li class="posts-column-post__content__frame__category__item"><a class="posts-column-post__content__frame__category-name" href="#">music</a></li>
                         </ul>
                         <h2 class="posts-column-post__content__frame__title"><a href="#">лучшие музыкальные фестивали этого лета</a></h2>
                         <div class="posts-column-post__content__frame__date-author">
@@ -133,8 +133,8 @@
                 <div class="posts-column-post__content">
                     <div class="posts-column-post__content__frame">
                         <ul class="posts-column-post__content__frame__category">
-                            <li><a class="posts-column-post__content__frame__category-name" href="#">lifestyle</a></li>
-                            <li><a class="posts-column-post__content__frame__category-name" href="#">food</a></li>
+                            <li class="posts-column-post__content__frame__category__item"><a class="posts-column-post__content__frame__category-name" href="#">lifestyle</a></li>
+                            <li class="posts-column-post__content__frame__category__item"><a class="posts-column-post__content__frame__category-name" href="#">food</a></li>
                         </ul>
                         <h2 class="posts-column-post__content__frame__title"><a href="#">наукоёмкий процесс к кулинарии</a></h2>
                         <div class="posts-column-post__content__frame__date-author">
@@ -150,9 +150,9 @@
                 <div class="posts-column-post__content">
                     <div class="posts-column-post__content__frame">
                         <ul class="posts-column-post__content__frame__category">
-                            <li><a class="posts-column-post__content__frame__category-name" href="#">lifestyle</a></li>
-                            <li><a class="posts-column-post__content__frame__category-name" href="#">interior</a></li>
-                            <li><a class="posts-column-post__content__frame__category-name" href="#">art</a></li>
+                            <li class="posts-column-post__content__frame__category__item"><a class="posts-column-post__content__frame__category-name" href="#">lifestyle</a></li>
+                            <li class="posts-column-post__content__frame__category__item"><a class="posts-column-post__content__frame__category-name" href="#">interior</a></li>
+                            <li class="posts-column-post__content__frame__category__item"><a class="posts-column-post__content__frame__category-name" href="#">art</a></li>
                         </ul>
                         <h2 class="posts-column-post__content__frame__title"><a href="#">делаем модные принты на подушках для интерьера</a></h2>
                         <div class="posts-column-post__content__frame__date-author">
@@ -212,7 +212,7 @@
                 <h3 class="">рассылка</h3>
                 <span class="title-underline"></span>
                 <form class="posts-sidebar-subscribe-form">
-                    <input id="subscribe-field" type="email" placeholder="Ваш e-mail адрес...">
+                    <input id="subscribe-field" type="email" placeholder="Ваш e-mail адрес..." name="e-mail">
                     <input id="subscribe-submit" type="submit" value="подписаться">
                 </form>
             </section>
@@ -314,7 +314,7 @@
             <h2 class="popup-form__title">ваш фидбек</h2>
             <span class="title-underline"></span>
             <p class="popup-form__question">Как часто вы заходите на сайт?</p>
-            <select class="popup-form__open-page-question">
+            <select class="popup-form__open-page-question" name="visit">
                 <option selected>Почти каждый день</option>
                 <option>Раз в несколько дней</option>
                 <option>Раз в несколько недель</option>
@@ -326,7 +326,7 @@
                 <input type="radio" class="popup-form__radio-button" id="no-subscribe" name="subscribe"><label for="no-subscribe" class="popup-form__radio-button-value">Нет</label>
             </div>
             <p class="popup-form__question">Расскажите, какой контент вы хотели бы видеть на нашем сайте?</p>
-            <textarea class="popup-form__desired-content" placeholder="Может, больше рецептов?"></textarea>
+            <textarea class="popup-form__desired-content" placeholder="Может, больше рецептов?" name="wishes"></textarea>
             <input type="submit" value="Отправить" class="popup-form__submit">
             <a href="#"><img class="popup-close" src="svg/form-x.svg" alt="close"></a>
         </form>

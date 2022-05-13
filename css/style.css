@@ -283,6 +283,7 @@ h3 {
 .posts-column-post__content__frame__category {
     display: flex;
     line-height: 10px;    
+    flex-wrap: wrap;
 }
 
 .posts-column-post__content__frame__category-name {
@@ -294,6 +295,9 @@ h3 {
     text-decoration: none;
 }
 
+.posts-column-post__content__frame__category__item {
+    margin-bottom: 10px;
+}
 
 .posts-column-post__content__frame__category-name:hover {
     text-decoration: 2px underline #7a7331;    
@@ -301,7 +305,7 @@ h3 {
 
 
 .posts-column-post__content__frame__title {
-    margin-top: 15px;
+    margin-top: 5px;
     font-size: 20px;
     text-transform: uppercase;
     text-decoration: none;
